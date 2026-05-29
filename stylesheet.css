@@ -1,0 +1,59 @@
+*,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+
+:root {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.60;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 65%;
+    max-width: 2480px;
+}
+
+@media (width < 1500px) {
+    body {
+	width: 90%;
+    }
+}
+
+@media (width > 900px) {
+    body {
+	width: 800px;
+    }
+}
+
+img {
+    width: 30%;
+    margin: 2em auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+    overflow-wrap: anywhere;
+    padding: 0.6em
+}
+
+tr :first-child {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lightBlue;
+}
+
+caption {
+    font-weight: bold;
+}
